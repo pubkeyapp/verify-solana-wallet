@@ -1,0 +1,12 @@
+{
+  "name": "verify-solana-wallet",
+  "version": "0.0.1",
+  "dependencies": {
+    "@noble/hashes": "^1.4.0",
+    "@noble/ed25519": "^2.1.0",
+    "bs58": "^5.0.0"
+  },
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "verify-solana-wallet",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/verify-solana-wallet/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist/{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/verify-solana-wallet",
+        "main": "packages/verify-solana-wallet/src/index.ts",
+        "tsConfig": "packages/verify-solana-wallet/tsconfig.lib.json",
+        "assets": ["packages/verify-solana-wallet/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist/{projectRoot}"
+      }
+    }
+  }
+}
