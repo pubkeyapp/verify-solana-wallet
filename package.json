@@ -1,0 +1,17 @@
+{
+  "name": "@verify-solana-wallet/source",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nx/js": "19.2.0-beta.7",
+    "@nx/workspace": "19.2.0-beta.7",
+    "@swc-node/register": "1.9.1",
+    "@swc/core": "1.5.7",
+    "@swc/helpers": "0.5.11",
+    "nx": "19.2.0-beta.7",
+    "prettier": "^2.6.2"
+  }
+}
